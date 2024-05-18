@@ -1,0 +1,41 @@
+button {
+  /* background: none; */
+  border: none;
+  /* outline: none; */
+  /* box-shadow: none; */
+  /* border-radius: 50%; */
+  width: 8.75rem;
+  
+}
+/* body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+} */
+.main {
+  background-color: black;
+  color: white;
+  height: 20.25rem;
+  width: 34.2rem;
+  padding-left: 15px;
+}
+
+.btnclass {
+  /* margin-left: 0.9375rem; */
+  border-radius: 0.625rem;
+  position: relative;
+  top: 2.5625rem;
+  margin: 0.3125rem;
+}
+.currentcount {
+  text-decoration: underline;
+  /* font-weight: 700; */
+}
+.error {
+  color: red;
+  height: 1.25rem;
+}
+.count {
+  font-weight: bolder;
+}
