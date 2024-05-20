@@ -9,6 +9,9 @@ count.innerHTML = `${countingNumber}`;
 
 Increment.addEventListener("click", () => {
   countingNumber++;
+  if (countingNumber == 1) {
+    Clear.style.display = "inline-block";  
+  }
   count.innerHTML = `${countingNumber}`;
   error.innerHTML = ``;
 });
@@ -16,7 +19,11 @@ Increment.addEventListener("click", () => {
 Decrement.addEventListener("click", () => {
   if (countingNumber > 0) {
     countingNumber--;
-  } else if (countingNumber == 0) {
+  }
+  if (countingNumber == 0) {
+    Clear.style.display = "none";
+  } 
+  else if (countingNumber == 0) {
     error.innerHTML = `Error : cannot go below 0`;
   }
   // console.log(countingNumber);
@@ -26,5 +33,6 @@ Decrement.addEventListener("click", () => {
 Clear.addEventListener("click", () => {
   countingNumber = 0;
   error.innerHTML = ``;
+  Clear.style.display = "none";
   count.innerHTML = `${countingNumber}`;
 });
